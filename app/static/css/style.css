@@ -1,0 +1,13 @@
+body{
+    background-color: #000;
+    color: #fff;
+    padding: 0 2rem;
+}
+
+a{
+    color: cyan;
+}
+
+.title{
+    text-align: center;
+}
