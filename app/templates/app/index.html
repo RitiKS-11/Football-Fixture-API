@@ -1,11 +1,18 @@
-{% extends 'base.html' %} 
-{% block content %}
-    <h1 class="title">API Documentation</h1>
-
+{% extends 'base.html' %} {% block content %}
+<div class="main">
+    <h2>Project Goals</h2>
+    <p>
+        This project centers around building API endpoints tailored for accessing football fixtures. 
+        Users can utilize this API to retrieve comprehensive information, including all fixtures, 
+        fixtures specific to certain teams, or fixtures scheduled on a particular date.
+    </p>
+ 
+    <h2>API Examples</h2>
     {% for endpoint in endpoints %}
     <p>
-        <span>
-            <a href="{{endpoint.url}}" target="_blank">{{endpoint.url}}</a>
-        </span>: {{endpoint.description}}
+        <h4>{{endpoint.description}}</h4>
+         
     </p>
-{% endfor %} {% endblock %}
+    <pre><a href="{{endpoint.url}}" target="_blank">{{endpoint.url}}</a></pre>
+    {% endfor %} {% endblock %}
+</div>

@@ -1,13 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 body{
     background-color: #000;
     color: #fff;
     padding: 0 2rem;
+    font-family: "Inter",sans-serif;
 }
 
 a{
     color: cyan;
+    text-decoration: none;
 }
 
 .title{
     text-align: center;
+}
+
+.main{
+    margin: 0 auto;
+    width: 50%;
+}
+
+.main h2{
+    font-size: 36px;
+    margin: 50px 0 30px;
+    padding-top: 30px;
+}
+
+.main p{
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0 0 20px;
+}
+
+pre{
+    line-height: 18px;
+    margin: 30px;
 }
